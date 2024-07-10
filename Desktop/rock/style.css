@@ -63,7 +63,7 @@ body {
 }
 
 .option_image img {
-  width: 50px;
+  width: 100px;
 }
 .option_images {
   display: flex;
