@@ -56,7 +56,7 @@ optionImages.forEach((image, index) => {
         SP: "User",
       };
 
-      // Look up the outcome value based on user and CPU options
+      // Look up the outcome value based on user and CPU option
       let outComeValue = outcomes[userValue + cpuValue];
 
       // Display the result
