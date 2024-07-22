@@ -1,5 +1,6 @@
 let e = <string | number>"world";
 
+//add or concat
 const addOrConcat = (
   a: number,
   b: number,
@@ -11,9 +12,26 @@ const addOrConcat = (
 
 console.log(addOrConcat(1, 2, "add"));
 
-//variation
-const year = document.getElementById("year") as HTMLSpanElement;
-const thisYear: string = new Date().getFullYear().toString();
+//transaction
+interface TransactionObj {
+  [index: string]: number;
+}
 
-year.setAttribute("datetime", thisYear);
-year.textContent = thisYear;
+const todayTransaction: TransactionObj = {
+  Pizza: -10,
+  Book: -5,
+  Job: 50,
+  Passenger: 10,
+};
+
+//net plus transaction and global or total
+const todaysNet = (transactions: TransactionObj): number => {
+  let total = 0;
+  for (const transaction in transactions) {
+    total += transactions[transaction];
+  }
+  return total;
+};
+
+console.log(todayTransaction);
+console.log(todaysNet(todayTransaction));
