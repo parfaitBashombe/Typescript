@@ -5,3 +5,28 @@ interface DOMList {
   clear(): void;
   render(fullList: FullList): void;
 }
+
+export default class ListTemplate implements DOMList {
+  ul: HTMLUListElement;
+
+  private constructor() {
+    this.ul = document.getElementById("listItems") as HTMLUListElement;
+  }
+
+  clear(): void {
+    this.ul.innerHTML = "";
+  }
+
+  render(fullList: FullList): void {
+    this.clear();
+
+    fullList.list.forEach((item) => {
+      const li = document.createElement("li") as HTMLElement;
+      li.className = "item";
+
+      const check = document.createElement("input") as HTMLInputElement;
+      check.type = "checkbox";
+      check.id = item.id;
+    });
+  }
+}
