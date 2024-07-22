@@ -1,4 +1,4 @@
-import "../src/css/style.css";
+import "./css/style.css";
 import FullList from "./model/FullList";
 import ListItem from "./model/ListItem";
 import ListTemplate from "./templates/ListTemplate";
@@ -10,6 +10,7 @@ const initApp = (): void => {
   const itemEntryForm = document.getElementById(
     "itemEntryForm"
   ) as HTMLFormElement;
+
   itemEntryForm.addEventListener("submit", (event: SubmitEvent): void => {
     event.preventDefault();
 
@@ -29,7 +30,7 @@ const initApp = (): void => {
   });
 
   const clearItems = document.getElementById(
-    "clearItemButton"
+    "clearItemsButton"
   ) as HTMLButtonElement;
 
   clearItems.addEventListener("click", (): void => {
@@ -38,6 +39,7 @@ const initApp = (): void => {
   });
 
   fullList.load();
+
   template.render(fullList);
 };
 
