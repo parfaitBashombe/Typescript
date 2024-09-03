@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import { FaBed } from "react-icons/fa6";
+
 const Navbar = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
@@ -72,8 +74,8 @@ const Navbar = (): JSX.Element => {
           />
         </form>
         <div className="" id="buttons">
-          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
-            Hotels
+          <button className="flex space-x-2 py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            <p>Hotels</p> <FaBed />
           </button>
           <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
             Flights
