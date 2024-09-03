@@ -15,33 +15,85 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <header className="bg-primaryColor text-white sticky top-0 z-10">
-      <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
-        <h1 className="text-3xl font-medium">
-          <Link href="#hero">🗺️ Travels</Link>
-        </h1>
-        <div>
+    <header className="bg-slate-200 text-black sticky top-0 z-10 py-3">
+      <section
+        id="triptrap"
+        className="max-w-6xl mx-auto p-4 flex justify-between start-2 items-center"
+      >
+        <div className="flex flex-row justify-between items-center gap-10">
+          <h1 className="text-3xl font-medium">
+            <Link href="#hero">🗺️ Travels</Link>
+          </h1>
+          {/* <div>
           <button
             onClick={() => onOpenedMenu()}
             className="text-3xl md:hidden cursor-pointer"
           >
             &#9776;
           </button>
+        </div> */}
+          <nav className="hidden md:block space-x-8 text-lg" aria-label="main">
+            <Link href="#details" className="hover:opacity-90">
+              Details
+            </Link>
+            <Link href="#support" className="hover:opacity-90">
+              Support
+            </Link>
+            <Link href="#partenership" className="hover:opacity-90">
+              Partenership
+            </Link>
+            <Link href="#bookings" className="hover:opacity-90">
+              Bookings
+            </Link>
+          </nav>
         </div>
-        <nav className="hidden md:block space-x-8 text-xl" aria-label="main">
-          <Link href="#preview" className="hover:opacity-90">
-            Preview
-          </Link>
-          <Link href="#about" className="hover:opacity-90">
-            About us
-          </Link>
-          <Link href="#contacts" className="hover:opacity-90">
-            Contact Us
-          </Link>
+
+        <nav id="loging" className="flex flex-row justify-evenly gap-3">
+          <button className="py-1 px-3 text-center border-black border-2  rounded-full">
+            Eng
+          </button>
+          <button className="py-1 px-3 text-center border-black border-2  rounded-full">
+            Log in
+          </button>
+          <button className="py-1 px-3 text-center text-white bg-black border-none  rounded-full">
+            Register
+          </button>
         </nav>
       </section>
 
-      <section
+      <section className="flex flex-row">
+        <form action="" className="max-w-80 mx-auto text-xl sm:text-xl">
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Search Flight"
+            className="w-full text-black text-2xl sm:text-xl p-3 rounded-full h-10 border border-solid border-slate-900 focus:outline-none"
+          />
+        </form>
+        <div className="" id="buttons">
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Hotels
+          </button>
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Flights
+          </button>
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Trains
+          </button>
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Bus & Travels
+          </button>
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Car Rental
+          </button>
+          <button className="py-1 px-3 text-center border-black hover:bg-black hover:text-white hover:border-none border-2  rounded-full">
+            Events
+          </button>
+        </div>
+      </section>
+
+      {/* <section
         onClick={() => onClosedMenu()}
         id="mobile-menu"
         className={`absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu ${
@@ -84,7 +136,7 @@ const Navbar = (): JSX.Element => {
             Legal
           </Link>
         </nav>
-      </section>
+      </section> */}
     </header>
   );
 };
