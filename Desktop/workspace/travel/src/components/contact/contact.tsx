@@ -21,7 +21,7 @@ const Contacts = () => {
           id="subject"
           name="subject"
           required
-          className="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          className="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900"
         />
         <label htmlFor="message">Message:</label>
         <textarea
@@ -31,9 +31,9 @@ const Contacts = () => {
           rows={10}
           placeholder="Your Message"
           required
-          className="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          className="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900"
         ></textarea>
-        <button className="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+        <button className="bg-primaryColor hover:bg-secondaryColor active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
           Submit
         </button>
       </form>

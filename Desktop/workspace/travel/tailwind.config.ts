@@ -13,14 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primaryColor: "#706C61",
+        secondaryColor: "#9e9889",
+      },
     },
-    colors: {
-      primaryColor: "#706C61",
-    },
-    screens: {
-      widescreen: { raw: "(min-aspect-ratio:3/2)" },
-      tallscreen: { raw: "(min-aspect-ratio:13/20)" },
-    },
+
     keyframes: {
       "open-menu": {
         "0%": { transform: "scaleY(0)" },

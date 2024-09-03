@@ -44,7 +44,7 @@ const Navbar = (): JSX.Element => {
       <section
         onClick={() => onClosedMenu()}
         id="mobile-menu"
-        className={`absolute top-0 bg-black w-full text-5xl flex-col justify-content-center ${
+        className={`absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu ${
           open ? "flex" : "hidden"
         }`}
       >
