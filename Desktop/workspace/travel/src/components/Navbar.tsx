@@ -46,14 +46,14 @@ const Navbar = (): JSX.Element => {
             </button>
           </nav>
         </div>
-        <nav className="flex flex-row gap-1 text-sm">
-          <button className="py-1 px-5 border-black border-2 rounded-full hover:bg-black hover:text-white hover:border-none">
+        <nav className="flex flex-row gap-1 text-xs items-center">
+          <button className="py-1 px-1 md:px-5 md:text-sm border-black border-2 rounded-full hover:bg-black hover:text-white hover:border-none">
             Eng
           </button>
-          <button className="py-1 px-5 border-black border-2 rounded-full hover:bg-black hover:text-white hover:border-none">
+          <button className="py-1 px-1 md:px-5 md:text-sm whitespace-nowrap border-black border-2 rounded-full hover:bg-black hover:text-white hover:border-none">
             Log in
           </button>
-          <button className="bg-black text-white py-1 px-5 border-black border-2 rounded-full hover:opacity-80 hover:border-none">
+          <button className="bg-black text-white py-1 px-1 md:px-5 md:text-sm border-black border-2 rounded-full hover:opacity-80 hover:border-none">
             Register
           </button>
         </nav>
@@ -64,7 +64,7 @@ const Navbar = (): JSX.Element => {
           <input
             type="text"
             placeholder="Search Flight"
-            className="bg-slate-200 rounded-full h-7 text-left px-7"
+            className="bg-slate-200 rounded-full h-7 text-left px-7 focus:outline-none"
           />
           <IoSearchCircleOutline className="absolute top-0 w-7 h-7" />
         </form>
