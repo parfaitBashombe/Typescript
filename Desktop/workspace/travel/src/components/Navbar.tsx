@@ -70,27 +70,27 @@ const Navbar = (): JSX.Element => {
         </form>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <IoBedOutline />
-          <p className="hidden md:block">Hotels</p>
+          <p className="hidden lg:block">Hotels</p>
         </button>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <SlPlane />
-          <p className="hidden md:block">Flights</p>
+          <p className="hidden lg:block">Flights</p>
         </button>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <IoTrainOutline />
-          <p className="hidden md:block">Trains</p>
+          <p className="hidden lg:block">Trains</p>
         </button>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <IoBusOutline />
-          <p className="hidden md:block">Bus & Travel</p>
+          <p className="hidden lg:block">Bus & Travel</p>
         </button>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <IoCarSportOutline />
-          <p className="hidden md:block">Car Rental</p>
+          <p className="hidden lg:block">Car Rental</p>
         </button>
         <button className="flex flex-row items-center gap-2 border-none bg-slate-200 rounded-full py-1 px-4 md:px-7 hover:bg-black hover:text-white">
           <LuCalendarClock />
-          <p className="hidden md:block">Event</p>
+          <p className="hidden lg:block">Event</p>
         </button>
       </section>
     </header>
