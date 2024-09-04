@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="bg-black text-white text-md">
-      <section className="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+      <section className="mx-auto p-4 flex flex-col sm:flex-row sm:justify-between max-w-full">
         <address className="mt-1">
           <h2 className="mb-3">Travel.</h2>
           At Travel, we believe tht evry journey is
