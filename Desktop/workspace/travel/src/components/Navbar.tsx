@@ -23,7 +23,7 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <header className="flex flex-col text-black sticky top-0 z-10 p-3 gap-5">
+    <header className="flex flex-col text-black sticky top-0 z-10 p-3 gap-5 bg-white">
       <section className="flex flex-row justify-between ">
         <div className="flex flex-row items-center gap-14">
           <div>
