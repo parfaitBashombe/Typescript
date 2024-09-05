@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <main
       id="hero"
-      className="max-w-4xl mx-auto flex flex-row justify-evenly items-center py-20 "
+      className="max-w-4xl mx-auto flex flex-row justify-evenly items-center py-20"
     >
-      <section>
+      <section className="flex flex-col gap-4">
         <div>
-          <p className="text-3xl">
+          <p className="text-3xl mb-4">
             Where You Get Trappped in the Beauty of the World and Unforgettable
             Happiness!
           </p>
