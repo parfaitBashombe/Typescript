@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main
       id="hero"
-      className="max-w-4xl mx-auto flex flex-row justify-evenly items-center py-20"
+      className="max-w-6xl mx-auto my-3 flex flex-row justify-evenly items-center gap-10 p-20 bg-slate-200 rounded-3xl"
     >
       <section className="flex flex-col gap-4">
         <div>
