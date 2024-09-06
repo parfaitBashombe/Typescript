@@ -22,7 +22,24 @@ const Promos = (): JSX.Element => {
           </button>
         </p>
       </section>
-      <section id="ramadanPromo"></section>
+      <section id="specialPromo">
+        <p id="summerPromo" className="bg-scroll bg-hero-image bg-cover">
+          Summer Promo
+        </p>
+        <div id="explorePromo">
+          <div id="explore">
+            <title>{`Let's Explore Together`}</title>
+            <p>
+              At Travel, the world is our playground, and every journey is an
+              oportunity to discover something new. Join us as we explore the
+              wonders of the world and create memories that will last a
+              lifetime.
+            </p>
+          </div>
+          <div id="ramadanPromo"></div>
+        </div>
+        <div id="voyage"></div>
+      </section>
     </div>
   );
 };
