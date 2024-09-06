@@ -1,15 +1,12 @@
 "use client";
 import { IoBedOutline } from "react-icons/io5";
-import mansion from "../../public/mansion.jpg";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <main
       id="hero"
-      className="max-w-6xl mx-auto my-3 flex flex-row justify-evenly items-center gap-10 p-20 bg-slate-200 rounded-3xl"
+      className="max-w-6xl mx-auto my-3 flex flex-row justify-evenly items-center gap-10 p-20 text-white rounded-3xl bg-scroll bg-hero-image bg-contain"
     >
-      {/* <Image src={mansion} alt="" className="w-full h-full" /> */}
       <section className="flex flex-col gap-4">
         <div>
           <p className="text-3xl mb-4">
