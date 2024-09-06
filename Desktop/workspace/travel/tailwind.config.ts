@@ -14,21 +14,6 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-image": "url('/mansion.jpg')",
       },
-      colors: {
-        primaryColor: "#706C61",
-        secondaryColor: "#9e9889",
-      },
-    },
-
-    keyframes: {
-      "open-menu": {
-        "0%": { transform: "scaleY(0)" },
-        "80%": { transform: "scaleY(1.2)" },
-        "100%": { transform: "scaleY(1)" },
-      },
-    },
-    animation: {
-      "open-menu": "open-menu 0.5s ease-in-out forwards",
     },
   },
   plugins: [],
