@@ -1,8 +1,10 @@
 import React from "react";
 
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 const Promos = (): JSX.Element => {
   return (
-    <div className="max-w-6xl mx-auto my-10 flex flex-col">
+    <div className="max-w-6xl mx-auto my-10 flex flex-col h-60 bg-green-300">
       <section
         id="bigPromo"
         className="flex flex-col gap-2 md:gap-16 justify-between md:flex-row py-10 text-left"
@@ -22,12 +24,18 @@ const Promos = (): JSX.Element => {
           </button>
         </p>
       </section>
-      <section id="specialPromo">
-        <p id="summerPromo" className="bg-scroll bg-hero-image bg-cover">
+      <section
+        id="specialPromo"
+        className="h-1/2 flex flex-row justify-evenly gap-10"
+      >
+        <p id="summerPromo" className="flex-1 bg-scroll bg-hero-image bg-cover">
           Summer Promo
         </p>
-        <div id="explorePromo">
-          <div id="explore">
+        <div
+          id="explorePromo"
+          className="flex flex-row gap-10 h-full bg-red-500"
+        >
+          <div id="explore" className="">
             <title>{`Let's Explore Together`}</title>
             <p>
               At Travel, the world is our playground, and every journey is an
@@ -36,9 +44,20 @@ const Promos = (): JSX.Element => {
               lifetime.
             </p>
           </div>
-          <div id="ramadanPromo"></div>
+          <div id="ramadanPromo" className="">
+            <p>
+              Enjoy a 50% discount on your train tickets. Book now with Travel
+              and embrace the spirit of season as you embark on your
+              unforgettable journey.
+            </p>
+            <title>Ramadan Promo</title>
+          </div>
         </div>
-        <div id="voyage"></div>
+        <div id="voyage" className="bg-scroll bg-hero-image bg-cover">
+          <button className="p-4 bg-slate-100 rounded-full">
+            <MdOutlineArrowOutward />
+          </button>
+        </div>
       </section>
     </div>
   );
